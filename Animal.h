@@ -36,9 +36,13 @@ protected:
 public:
     Animal( string newSpecies );
 
-    void setWeight(float weight);
+    void setGender(Gender newGender);
+
+    void setWeight(float newWeight);
+
+private:
+    void setSpecies(const string &newSpecies);
 
 public:
-    void printInfo();
-    bool isValid();
+    void printInfo() const;
 };
